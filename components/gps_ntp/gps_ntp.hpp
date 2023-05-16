@@ -7,7 +7,7 @@
 namespace esphome {
 namespace gps {
 
-class GPS_NTP_Server : public Component, GPSListener {
+class GPS_NTP_Server : public Component, public GPSListener {
 public:
   void loop() override;
   void on_update(TinyGPSPlus &tiny_gps) override {
